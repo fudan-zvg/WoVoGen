@@ -8,6 +8,12 @@
 
 **Official implementation of "WoVoGen: World Volume-aware Diffusion for Controllable Multi-camera Driving Scene Generation".** 
 
+- Our WoVoGen is crafted to generate future world volumes (i.e., HD maps and occupancy) and high-quality multi-camera street-view images, with the input of past world-volumes. For comprehensive control, editing, and diverse sample generation, please refer to the article.
+
+<div align="center">
+  <img src="assets/scene_2.png"/>
+</div><br/>
+
 ## Abstract
 Generating multi-camera street-view videos is critical for augmenting autonomous driving datasets, addressing the urgent demand for extensive and varied data. Due to the limitations in diversity and challenges in handling lighting conditions, traditional rendering-based methods are increasingly being supplanted by diffusion-based methods. However, a significant challenge in diffusion-based methods is ensuring that the generated sensor data preserve both intra-world consistency and inter-sensor coherence. To address these challenges, we combine an additional explicit world volume and propose the World Volume-aware Multi-camera Driving Scene Generator (WoVoGen). This system is specifically designed to leverage 4D world volume as a foundational element for video generation. Our model operates in two distinct phases: (i) envisioning the future 4D temporal world volume based on vehicle control sequences, and (ii) generating multi-camera videos, informed by this envisioned 4D temporal world volume and sensor interconnectivity. The incorporation of the 4D world volume empowers WoVoGen not only to generate high-quality street-view videos in response to vehicle control inputs but also to facilitate scene editing tasks.
 
@@ -35,10 +41,6 @@ Generating multi-camera street-view videos is critical for augmenting autonomous
 
 ## 🚗 Scene Generation
 - WoVoGen excels in producing future world volumes with temporal consistency. Subsequently, it utilizes the world volume-aware 2D image features derived from the world model's outputs to synthesize a driving video with both multi-camera consistency and temporal consistency.
-
-<div align="center">
-  <img src="assets/scene_2.png"/>
-</div><br/>
   
 <div align="center">
   <img src="assets/scene_0.png"/>
