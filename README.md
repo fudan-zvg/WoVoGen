@@ -34,9 +34,14 @@ Generating multi-camera street-view videos is critical for augmenting autonomous
 </div><br/>
 
 ## 🚗 Scene Generation
-- WoVoGen excels in producing future world volumes with temporal consistency. Subsequently, it utilizes the world volume-aware 2D image features derived from the world model's outputs to synthesize a driving video with both multi-camera consistency and temporal consistency.
+- WoVoGen excels in producing future world volumes with temporal consistency. Subsequently, it utilizes the world volume-aware 2D image features derived from the world model's outputs to synthesize a driving video with both multi-camera consistency and temporal consistency.\
+  
 <div align="center">
   <img src="assets/scene_0.png"/>
+</div><br/>
+
+<div align="center">
+  <img src="assets/scene_1.png"/>
 </div><br/>
 
 ## 📜 BibTeX
