@@ -1,7 +1,7 @@
 # WoVoGen: World Volume-aware Diffusion for Controllable Multi-camera Driving Scene Generation
-### [[Paper]](https://arxiv.org/pdf/2312.02934.pdf) 
+### [[Paper]](https://arxiv.org/abs/2312.02934) 
 
-> [**WoVoGen: World Volume-aware Diffusion for Controllable Multi-camera Driving Scene Generation**](https://arxiv.org/pdf/2312.02934.pdf),            
+> [**WoVoGen: World Volume-aware Diffusion for Controllable Multi-camera Driving Scene Generation**](https://arxiv.org/abs/2312.02934),            
 > Jiachen Lu, Ze Huang, Jiahui Zhang, Zeyu Yang, [Li Zhang](https://lzrobots.github.io)  
 > **Fudan University**
 
