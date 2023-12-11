@@ -55,7 +55,7 @@ Generating multi-camera street-view videos is critical for augmenting autonomous
 @article{lu2023wovogen,
   title={WoVoGen: World Volume-aware Diffusion for Controllable Multi-camera Driving Scene Generation},
   author={Lu, Jiachen and Huang, Ze and Zhang, Jiahui and Yang, Zeyu and Zhang, Li},
-  journal={arXiv:},
+  journal={arXiv preprint arXiv:2312.02934},
   year={2023},
 }
 ```
