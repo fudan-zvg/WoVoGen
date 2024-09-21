@@ -50,6 +50,40 @@ Generating multi-camera street-view videos is critical for augmenting autonomous
   <img src="assets/scene_1.png"/>
 </div><br/>
 
+## Get started
+
+### Requirements
+- Python == 3.9
+- torch == 2.1.0
+
+### Generate world Volumes
+```
+python tools/nuscenes_convertor.py \
+    --nusc_root=$NUSC_ROOT \
+    --nusc_occ_root=$NUSC_OCC_ROOT \
+    --out_root=$OUT_ROOT \
+    --vae  # add image latent to world volumes
+```
+### Generate object guidance
+
+```
+python tools/clip_convertor.py
+```
+
+### Single frame generation
+```
+# Add weights to the model
+python tools/add_weight.py \
+    models/v2-1_512-ema-pruned.ckpt \
+    models/wovogen_single.ckpt
+
+# Train the single frame model
+python train_single_frame.py \
+    --config_path models/cldm_v21_c64_256x448_6cat_clip_local_high_dim.yaml \
+    --resume-path=models/wovogen_single.ckpt
+```
+
+
 ## 📜 BibTeX
 ```bibtex
 @article{lu2023wovogen,
@@ -59,3 +93,11 @@ Generating multi-camera street-view videos is critical for augmenting autonomous
   year={2023},
 }
 ```
+
+## Acknowledgements
+Here's how you can add a URL link to your README:
+ - [Stable Diffusion](https://github.com/Stability-AI/stablediffusion)
+ - [ControlNet](https://github.com/lllyasviel/ControlNet)
+
+
+This includes a clickable link to the Stability AI GitHub repository. You can use this format to add more links or modify as needed!
